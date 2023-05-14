@@ -1,0 +1,56 @@
+.signPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #caf6c9;
+
+  &-content {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid green;
+    background-color: #fff;
+  }
+
+  &-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 500px;
+    background-color: #0000003d;
+    transition: 0.4s ease-out;
+    background-color: rgba(156, 255, 159, 0.492);
+    backdrop-filter: blur(3px);
+
+    &__login {
+      transform: translateX(500px);
+    }
+
+    &__btn {
+      background-color: green;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgb(88, 141, 88);
+      }
+    }
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "users": [
+    {
+      "login": "Реєстор",
+      "pass": "123123123",
+      "name": "Влад",
+      "age": "",
+      "gender": "",
+      "phone": "0663250393",
+      "email": "burtsev@gmail.com",
+      "address": "",
+      "history": "",
+      "photo": "",
+      "disease": "",
+      "procedures": "",
+      "recordHistory": [],
+      "id": 1683387629864
+    },
+    {
+      "login": "admin",
+      "pass": "123",
+      "name": "",
+      "age": "",
+      "gender": "",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "history": "",
+      "photo": "",
+      "disease": "",
+      "procedures": "",
+      "recordHistory": [],
+      "id": 1683388114477
+    },
+    {
+      "login": "1",
+      "pass": "1",
+      "name": "1",
+      "phone": "1",
+      "email": "1",
+      "age": "",
+      "gender": "",
+      "address": "",
+      "history": "",
+      "photo": "",
+      "disease": "",
+      "procedures": "",
+      "recordHistory": [],
+      "id": 1683407806369
+    }
+  ],
+  "patients": [
+    {
+      "name": "Софія Вікторівна Григоренко",
+      "age": "30",
+      "gender": "Жінка",
+      "phone": "0552312321",
+      "email": "sofia@gmail.com",
+      "address": "Комсомол 32",
+      "history": "УЗД (Ультразвукове дослідження)\nЕКГ (Електрокардіограма)",
+      "photo": "https://metaratings.ru/storage/images/54/59/545978cbcb954abcf4d02b89d0a62421.jpg",
+      "disease": "Лихоманка, сухий кашель, задишка",
+      "procedures": "У 2019 році Софія, 30-річна жінка, звернулася до лікаря зі скаргами на головні болі та погіршення зору. У її медичній історії також зазначено гіпертонію та анемію.\n\nПісля проведення ретельного обстеження, включаючи магнітно-резонансну томографію головного мозку, було встановлено діагноз: мігрень з аурою. Лікар призначив Софії ліки для зменшення болів та запобігання епізодів мігрені, а також порадив їй вести здоровий спосіб життя та уникати факторів, що спричиняють мігрені.",
+      "recordHistory": [
+        {
+          "recordDate": "2023-05-13",
+          "recordTime": "13:00"
+        },
+        {
+          "recordDate": "2023-05-28",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-19",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        }
+      ],
+      "id": 1683188248740
+    },
+    {
+      "name": "Олексій Миколайович Кравченко",
+      "age": "45",
+      "gender": "Чоловік",
+      "phone": "0552721240",
+      "email": "olex@gmail.com",
+      "address": "Маріупольска 201А",
+      "history": "ГАСТРОСКОПІЯ (Ендоскопічне дослідження шлунку),\nКОМПЮТЕРНА ТОМОГРАФІЯ (КТ),\nРЕНТГЕНОСКОПІЯ (Рентгенологічне дослідження),\nБІОХІМІЧНИЙ АНАЛІЗ КРОВІ",
+      "photo": "data:image/jpeg;base64,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",
+      "disease": "Характерна сильна втома,\nбіль у м'язах,\nбіль у горлі",
+      "procedures": "У 2022 пацієнт Олексій Миколайович Кравченко, чоловік 45 років, звернувся до клініки зі скаргами на біль у грудях, підвищення температури тіла і кашель. Він також скаржиться на слабість і втомлюваність.\n\nПід час фізичного обстеження було виявлено підвищену температуру тіла до 38,5 градусів Цельсія, слабкий пульс (80 ударів за хвилину), підвищений артеріальний тиск (140/90 мм рт. ст.), а також наявність вологих хрипів при аускультації легенів.",
+      "recordHistory": [
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-13",
+          "recordTime": "15:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-06",
+          "recordTime": "08:00"
+        },
+        {
+          "recordDate": "2023-05-06",
+          "recordTime": "17:00"
+        }
+      ],
+      "id": 1683188713636
+    },
+    {
+      "name": "Мартем'янов Артем Володимирович",
+      "age": "20",
+      "gender": "Чоловік",
+      "phone": "0993212354",
+      "email": "artemsobaka@dog.com",
+      "address": "Будка 47",
+      "history": "1) Клізма\n2) Щеплення",
+      "photo": "https://sobakovod.club/uploads/posts/2021-12/1640417116_1-sobakovod-club-p-sobaki-prikolnie-ovcharok-1.jpg",
+      "disease": "Лишай, блохи ",
+      "procedures": "Однажды собака по имени Артем зашла в лес и стала играть с другими животными. Но вдруг он укусил крысу, которая оказалась зараженной бешенством. Через несколько дней Артем начал проявлять странные симптомы - он стал сильно раздражительным, лаять на своих хозяев, и бегать вокруг дома, как будто ему было скучно. Хозяева заметили эти странные изменения и решили привести собаку к ветеринару.",
+      "recordHistory": [
+        {
+          "recordDate": "2023-05-19",
+          "recordTime": "15:00"
+        },
+        {
+          "recordDate": "2023-05-17",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        }
+      ],
+      "id": 1683189021976
+    },
+    {
+      "login": "1",
+      "pass": "1",
+      "name": "Бурцев Владислва Миколайович",
+      "age": "20",
+      "gender": "Чоловік",
+      "phone": "0993212397",
+      "email": "burtsev@gmail.com",
+      "address": "Нора 27",
+      "history": "Не було",
+      "photo": "https://medialeaks.ru/wp-content/uploads/2018/01/2-25.jpg",
+      "disease": "Біль у шлунку",
+      "procedures": "Одного разу криса на ім'я Влад потрапила до лікаря з дивними симптомами. Вона постійно бігала в колесі, нездужала їла та навіть намагалася пірнути в акваріум. Лікар здивувався і почав досліджувати крису. Після кількох годин він зрозумів, що Рекс став жертвою скаження.",
+      "recordHistory": [
+        {
+          "recordDate": "2023-05-13",
+          "recordTime": "15:00"
+        },
+        {
+          "recordDate": "2023-05-20",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "17:00"
+        },
+        {
+          "recordDate": "2023-05-19",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-21",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        }
+      ],
+      "id": 1683189180148
+    },
+    {
+      "name": "111",
+      "age": "111123",
+      "phone": "113123",
+      "email": "11123",
+      "address": "nevlad",
+      "history": "111123123123123",
+      "photo": "1112312312",
+      "procedures": "vlad",
+      "disease": "11113123123",
+      "id": 1683986882540
+    }
+  ],
+  "doctors": [
+    {
+      "login": "1",
+      "pass": "1",
+      "name": "Олександр Ковалев Миколайович",
+      "age": "54",
+      "gender": "Чоловік",
+      "phone": "0995728321",
+      "email": "kovalev@gmail.com",
+      "address": "506",
+      "history": "Відзначився у галузі медицини своїми дослідженнями та винаходами. Він розробив новий метод лікування, який дозволяє швидко та ефективно відновлювати післяопераційний період після складних операцій на серці. Цей метод отримав міжнародне визнання та був впроваджений в практику в багатьох країнах світу.",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "disease": "Хірург",
+      "procedures": "Закінчив медичний факультет Київського національного університету імені Тараса Шевченка",
+      "recordHistory": [
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "13:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "11:00"
+        },
+        {
+          "recordDate": "2023-05-13",
+          "recordTime": "13:00"
+        },
+        {
+          "recordDate": "2023-05-19",
+          "recordTime": "15:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-13",
+          "recordTime": "15:00"
+        },
+        {
+          "recordDate": "2023-05-17",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-28",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-05",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-06",
+          "recordTime": "08:00"
+        },
+        {
+          "recordDate": "2023-05-20",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-06",
+          "recordTime": "17:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "17:00"
+        },
+        {
+          "recordDate": "2023-05-19",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-21",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "18:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        },
+        {
+          "recordDate": "2023-05-11",
+          "recordTime": "08:00"
+        }
+      ],
+      "id": 1683225644299
+    },
+    {
+      "login": "2",
+      "pass": "2",
+      "name": "newUser",
+      "age": "newUser",
+      "gender": "",
+      "phone": "1",
+      "email": "newUser",
+      "address": "newUser",
+      "history": "newUser",
+      "photo": "newUser",
+      "procedures": "newUser",
+      "disease": "newUser",
+      "id": 1683409576119
+    }
+  ],
+  "records": [
+    {
+      "patinetId": 1683189180148,
+      "patientName": "Бурцев Владислва Миколайович",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0993212397",
+      "doctorPhone": "0995728321",
+      "patientEmail": "burtsev@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Нора 27",
+      "doctorAddress": "506",
+      "patientPhoto": "https://medialeaks.ru/wp-content/uploads/2018/01/2-25.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "patientDisease": "Їсть все підряд",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-20",
+      "recordTime": "18:00",
+      "conclusion": "аутизм",
+      "id": 1683307037859
+    },
+    {
+      "patinetId": 1683188713636,
+      "patientName": "Олексій Миколайович Кравченко",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0552721240",
+      "doctorPhone": "0995728321",
+      "patientEmail": "olex@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Маріупольска 201А",
+      "doctorAddress": "506",
+      "patientPhoto": "data:image/jpeg;base64,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",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "patientDisease": "Характерна сильна втома,\nбіль у м'язах,\nбіль у горлі",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-06",
+      "recordTime": "17:00",
+      "conclusion": "Хай більше не їсть",
+      "id": 1683373966790
+    },
+    {
+      "patientDisease": "Їсть не все підряд",
+      "patinetId": 1683189180148,
+      "patientName": "Бурцев Владислва Миколайович",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0993212397",
+      "doctorPhone": "0995728321",
+      "patientEmail": "burtsev@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Нора 27",
+      "doctorAddress": "506",
+      "patientPhoto": "https://medialeaks.ru/wp-content/uploads/2018/01/2-25.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-19",
+      "recordTime": "18:00",
+      "conclusion": "",
+      "id": 1683640789271
+    },
+    {
+      "patientDisease": "Їсть не все підряд",
+      "patinetId": 1683189180148,
+      "patientName": "Бурцев Владислва Миколайович",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0993212397",
+      "doctorPhone": "0995728321",
+      "patientEmail": "burtsev@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Нора 27",
+      "doctorAddress": "506",
+      "patientPhoto": "https://medialeaks.ru/wp-content/uploads/2018/01/2-25.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-21",
+      "recordTime": "18:00",
+      "conclusion": "",
+      "id": 1683640846807
+    },
+    {
+      "patientDisease": "Лихоманка, сухий кашель, задишка",
+      "patinetId": 1683188248740,
+      "patientName": "Софія Вікторівна Григоренко",
+      "doctorId": 1683409576119,
+      "doctorName": "3",
+      "patientPhone": "0552312321",
+      "doctorPhone": "3",
+      "patientEmail": "sofia@gmail.com",
+      "doctorEmail": "3",
+      "patientAddress": "Комсомол 32",
+      "doctorAddress": "",
+      "patientPhoto": "https://metaratings.ru/storage/images/54/59/545978cbcb954abcf4d02b89d0a62421.jpg",
+      "doctorPhoto": "",
+      "doctorSpec": "",
+      "recordDate": "2023-05-19",
+      "recordTime": "18:00",
+      "conclusion": "",
+      "id": 1683649007513
+    },
+    {
+      "patinetId": 1683189180148,
+      "patientName": "Бурцев Владислва Миколайович",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0993212397",
+      "doctorPhone": "0995728321",
+      "patientEmail": "burtsev@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Нора 27",
+      "doctorAddress": "506",
+      "patientPhoto": "https://medialeaks.ru/wp-content/uploads/2018/01/2-25.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "patientDisease": "Біль у шлунку",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-11",
+      "recordTime": "08:00",
+      "conclusion": "",
+      "id": 1683753816599
+    },
+    {
+      "patinetId": 1683189021976,
+      "patientName": "Мартем'янов Артем Володимирович",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0993212354",
+      "doctorPhone": "0995728321",
+      "patientEmail": "artemsobaka@dog.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Будка 47",
+      "doctorAddress": "506",
+      "patientPhoto": "https://sobakovod.club/uploads/posts/2021-12/1640417116_1-sobakovod-club-p-sobaki-prikolnie-ovcharok-1.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "patientDisease": "Лишай, блохи ",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-11",
+      "recordTime": "18:00",
+      "conclusion": "",
+      "id": 1683757637320
+    },
+    {
+      "patinetId": 1683188248740,
+      "patientName": "Софія Вікторівна Григоренко",
+      "doctorId": 1683225644299,
+      "doctorName": "Олександр Ковалев Миколайович",
+      "patientPhone": "0552312321",
+      "doctorPhone": "0995728321",
+      "patientEmail": "sofia@gmail.com",
+      "doctorEmail": "kovalev@gmail.com",
+      "patientAddress": "Комсомол 32",
+      "doctorAddress": "506",
+      "patientPhoto": "https://metaratings.ru/storage/images/54/59/545978cbcb954abcf4d02b89d0a62421.jpg",
+      "doctorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQxyzQ7KbLXx68GQPUOpRfm8EKQelWKMnKQ7EyFnypg&s",
+      "patientDisease": "Лихоманка, сухий кашель, задишка",
+      "doctorSpec": "Хірург",
+      "recordDate": "2023-05-11",
+      "recordTime": "08:00",
+      "conclusion": "",
+      "id": 1683757708641
+    }
+  ],
+  "medicaments": [
+    {
+      "name": "Працетомол",
+      "number": "50",
+      "manufacturer": "Україна",
+      "photo": "data:image/jpeg;base64,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4/RJ9RXR/kbzxzTte17WujaQXNIBLXW0JG+zlpjIxdJ8wwcpqtntOtosXRcc7BlRq2iZO3JI0OHvHaDwKkogK+LDsoDRLIANAOroO+119PmP+rJ7W/BTEQEL5h/qS+0fBPB4+0l/F/2U1EBC8HD68v4yseDG/Xl/GVORAQPBbPrS/jd8VnwUznJ/Uf8AFTkQEDwVHzk/qP8AiseCY/8AU/qSfFWCICv8ERcn/wBST4p4Hi+q78b/AIqwRAV/geH6p/G/4rPgeH6n/U74qeiAr/A8P2Y9p+KeBoPsm+9WCICv8DwfZMWfA0H2MfsU9EBA8C0/2EX4QsjCYPsY/wAIU5FiwIXguH7GP8IXrwZD9lH+EKWiyCKMPi+yj/CF6FFH9mz8IUhEB8BRx/Zs/CF7bG0bgB6l9EQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAf/9k=",
+      "description": "Парацетамол используется для лечения таких состояний как:\nголовная боль;\nзубная боль;\nмышечные боли;\nартрит;\nболь в спине и суставах;\nпериодические боли у женщин;\nснятие болевого синдрома и лихорадки при ОРВИ, гриппе и простуде.",
+      "id": 1683974058520
+    },
+    {
+      "name": "133",
+      "number": "133",
+      "manufacturer": "12323",
+      "photo": "133",
+      "description": "133",
+      "id": 1683987925496
+    }
+  ],
+  "personal": [
+    {
+      "login": "4",
+      "pass": "4",
+      "name": "4",
+      "phone": "4",
+      "email": "4",
+      "age": "",
+      "gender": "",
+      "address": "",
+      "history": "",
+      "photo": "",
+      "disease": "",
+      "procedures": "",
+      "recordHistory": [],
+      "id": 1683407794785
+    },
+    {
+      "login": "1",
+      "pass": "1",
+      "name": "Абдула Хачбек",
+      "age": "67",
+      "phone": "0552312312",
+      "email": "abdul@gmail.com",
+      "address": "54",
+      "history": "міаіфвфі",
+      "photo": "data:image/jpeg;base64,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",
+      "disease": "Молодший херург",
+      "procedures": "dadasdas",
+      "recordHistory": [],
+      "id": 1683973176643
+    }
+  ]
+}

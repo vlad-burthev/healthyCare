@@ -1,0 +1,20 @@
+.right-side {
+  background: rgb(203, 252, 203);
+  padding: 0 40px 40px 40px;
+  border-radius: 12px;
+  border: 2px solid green;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+    left: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 13px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f3fbf8;
+    border-radius: 12px;
+  }
+}

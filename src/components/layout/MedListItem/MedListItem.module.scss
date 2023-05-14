@@ -1,0 +1,95 @@
+.user-list__item {
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 30px;
+  border: 2px solid #4b7e52;
+  width: 800px;
+  padding: 30px 30px 60px 30px;
+  position: relative;
+}
+
+.user-list__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.user-list__item-id {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-decoration: underline;
+}
+
+.user-list__info {
+  width: 60%;
+
+  & div {
+    font-weight: 600;
+    margin-top: 5px;
+
+    & span {
+      font-weight: 300;
+    }
+  }
+
+  & p {
+    margin: 10px 0;
+    font-weight: 600;
+
+    & span {
+      font-weight: 300;
+      display: block;
+      background-color: #f5deb3;
+      border: 2px solid #000;
+      padding: 5px;
+    }
+  }
+}
+
+.user-list__id {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.user-list__photo {
+  border-radius: 50px;
+  overflow: hidden;
+
+  & img {
+    display: block;
+  }
+}
+
+.description {
+  display: block;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #f5deb3;
+}
+
+.user-list__btn-update {
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(127, 176, 127);
+  border: none;
+  padding: 5px 15px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: rgb(172, 226, 172);
+  }
+}
+
+.user-list__btn-delate {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}

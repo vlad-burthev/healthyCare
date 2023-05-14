@@ -1,0 +1,16 @@
+.home {
+  padding: 30px 0;
+  &-records {
+    & h1 {
+      text-align: center;
+    }
+
+    &-none {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #000;
+      border-radius: 12px;
+      margin: 40px;
+    }
+  }
+}

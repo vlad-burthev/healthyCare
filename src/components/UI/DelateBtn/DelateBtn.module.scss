@@ -1,0 +1,13 @@
+.delate-btn {
+  background-color: red;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(250, 90, 90);
+  }
+}

@@ -1,0 +1,47 @@
+.reg {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px;
+
+  & div {
+    margin: 15px 0;
+  }
+
+  & h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &-btn {
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: rgb(107, 168, 107);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    margin: 20px 0 10px 0;
+
+    &:hover {
+      background-color: rgb(88, 138, 88);
+    }
+  }
+
+  & .toogle-block {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  & .toogle-btn {
+    border-radius: 12px;
+    border: 1px solid green;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px;
+  }
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&family=Titillium+Web:wght@600&display=swap");
+@import "./default-styles/reset";
+
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Rosario', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+
+html {
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #60d7ab;
+
+    border-radius: 13px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f3fbf8;
+    border: 3px solid #60d7ab;
+    border-radius: 12px;
+  }
+}
+
+body {
+  background-color: #f3fbf8;
+  font-family: "DM Sans", sans-serif;
+}

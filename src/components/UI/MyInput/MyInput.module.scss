@@ -1,0 +1,29 @@
+.my-input__text {
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(203, 252, 203);
+  color: #222;
+}
+.my-input__text::-webkit-outer-spin-button,
+.my-input__text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.my-teaxarea {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 12px;
+  padding: 10px;
+  height: 300px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(203, 252, 203);
+  color: #222;
+  resize: none;
+}

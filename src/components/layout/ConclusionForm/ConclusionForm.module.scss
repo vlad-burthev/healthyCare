@@ -1,0 +1,26 @@
+.ConclusionForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000030;
+  z-index: 1000;
+
+  div {
+    background-color: rgb(223, 254, 223);
+    border-radius: 12px;
+    border: 2px solid #000;
+    position: relative;
+    padding: 40px;
+    height: 500px;
+    width: 800px;
+
+    & > h2 {
+      margin-bottom: 50px;
+    }
+  }
+}

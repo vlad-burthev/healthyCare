@@ -1,0 +1,89 @@
+.CinItem {
+  display: flex;
+  align-items: center;
+
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 40px 10px 10px;
+    border-bottom: none;
+    background-color: rgb(193, 255, 193);
+  }
+
+  &-id {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-decoration: underline;
+  }
+
+  .doctor-records__content-name {
+    width: 40%;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    text-align: center;
+    transition: 0.3s;
+    background-color: rgb(255, 228, 178);
+    font-weight: bold;
+
+    &:hover {
+      background-color: rgb(255, 215, 141);
+    }
+  }
+
+  .doctor-records__content-date {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: rgb(70, 100, 100);
+    color: #fff;
+    font-size: bold;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .doctor-records__content-disease {
+    width: 40%;
+    text-align: center;
+    background-color: rgb(255, 177, 177);
+    border-radius: 12px;
+    border: 2px solid #000;
+    padding: 5px;
+  }
+
+  .doctor-records__content-conclusion {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    background-color: rgb(193, 255, 193);
+    border: 1px solid #000;
+    border-top: none;
+    padding: 20px 20px 40px 20px;
+
+    & div {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+  }
+
+  & button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 12px;
+    padding: 3px 7px;
+    background-color: rgb(9, 95, 9);
+    cursor: pointer;
+    color: #fff;
+  }
+}
