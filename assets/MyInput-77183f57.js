@@ -1,0 +1,1 @@
+import{j as a}from"./index-d4c46eb0.js";const n="_container_15xcj_1",s={container:n},o=({children:t})=>a.jsx("div",{className:s.container,children:t}),e={"my-input__text":"_my-input__text_120y2_1","my-teaxarea":"_my-teaxarea_120y2_18"},x=t=>a.jsx("input",{...t,className:e["my-input__text"]}),_=t=>a.jsx("textarea",{...t,className:e["my-teaxarea"]});export{o as C,x as M,_ as a};
