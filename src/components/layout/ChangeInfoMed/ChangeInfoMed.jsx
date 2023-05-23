@@ -30,10 +30,10 @@ const ChangeInfoMed = ({ patient, setPatient, setShowForm, showForm }) => {
     });
 
     if (
-      newUser.name.lenght === 0 &&
-      newUser.number.lenght === 0 &&
-      newUser.description.lenght === 0 &&
-      newUser.manufacturer.lenght === 0
+      newUser.name.length === 0 ||
+      newUser.number.length === 0 ||
+      newUser.description.length === 0 ||
+      newUser.manufacturer.length === 0
     ) {
       setShowError(true);
     } else {

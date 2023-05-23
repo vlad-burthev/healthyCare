@@ -33,7 +33,7 @@ const MedListItem = ({ userMed, delateUser }) => {
             Виробник: <span>{user.manufacturer}</span>
           </p>
           <div>
-            Описання:
+            Опис:
             <span className={styles.description}>{user.description}</span>
           </div>
         </div>

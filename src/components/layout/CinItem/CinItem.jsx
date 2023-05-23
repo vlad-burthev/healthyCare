@@ -13,7 +13,7 @@ const CinItem = ({
   docRecName,
 }) => {
   const patientLogin = useSelector((state) => state.repos.patient);
-  const registerLoginb = useSelector((state) => state.repos.register);
+  const personalLoginb = useSelector((state) => state.repos.personal);
   const { id } = useParams();
   const [showConclusionForm, setShowConclusionForm] = useState(false);
   const [conclusionText, setConclusionText] = useState("");
@@ -74,8 +74,13 @@ const CinItem = ({
           {docRec.patientDisease}
         </span>
       </div>
+      <div className={styles.Medworker}>
+        Мед персонал ID: <span>{docRec.personalId}</span>
+      </div>
+
       <div className={styles["doctor-records__content-conclusion"]}>
         <h4>Висновок:</h4>
+
         <div>{docRec.conclusion}</div>
         {!patientLogin && id === value && (
           <button

@@ -29,7 +29,7 @@ const UserList = ({ users, delateUser, searchUser, patient }) => {
             />
           ))
       ) : (
-        <h1>Такого лікаря не має</h1>
+        <h1>Нікого не знайдено</h1>
       )}
     </div>
   );

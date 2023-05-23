@@ -1,0 +1,32 @@
+.RightSideItem {
+  margin: 20px 0;
+}
+.RightSideItem h4 {
+  text-align: center;
+}
+.RightSideItem > div {
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(113, 169, 113);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.RightSideItem > div > p {
+  width: 30%;
+}
+.RightSideItem > div > a {
+  text-align: center;
+  width: 30%;
+  color: #fff;
+}
+.RightSideItem > div > a:hover {
+  color: #c3c1c1;
+}/*# sourceMappingURL=RightSideItem.module.css.map */

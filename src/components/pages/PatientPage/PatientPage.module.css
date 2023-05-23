@@ -1,0 +1,91 @@
+.patient-page {
+  padding: 100px 0;
+}
+.patient-page__content {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  border: 2px solid #000;
+  padding: 40px;
+  background-color: #f5deb3;
+}
+.patient-page__id {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: bold;
+  color: #2d2a24;
+  border-bottom: 1px solid #000;
+}
+.patient-page__photo {
+  width: 300px;
+  border: 2px solid #000;
+}
+.patient-page__personal-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.patient-page__contact {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.patient-page__contact div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin: 5px 0;
+}
+.patient-page__contact div span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.patient-page__medicine-information {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.patient-page__medicine-information div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.patient-page__medicine-information h3 {
+  margin-bottom: 10px;
+}
+.patient-page__medicine-information .medicine-information-history {
+  margin-bottom: 50px;
+}
+.patient-page .open-change-form {
+  margin-top: 30px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(107, 152, 107);
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.patient-page .open-change-form:hover {
+  background-color: rgb(78, 110, 78);
+}
+.patient-page .doctor-records {
+  background-color: #f8eacf;
+  margin-top: 50px;
+  border: 2px solid #000;
+}
+.patient-page .doctor-records h1 {
+  text-align: center;
+}
+.patient-page .doctor-records__content {
+  margin: 20px 0;
+  padding: 10px;
+  position: relative;
+}/*# sourceMappingURL=PatientPage.module.css.map */

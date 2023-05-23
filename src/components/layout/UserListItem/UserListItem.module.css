@@ -1,0 +1,52 @@
+.user-list__item {
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 30px;
+  border: 2px solid #4b7e52;
+  width: 600px;
+  padding: 30px;
+}
+
+.user-list__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user-list__info {
+  width: 60%;
+}
+
+.user-list__id {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.user-list__photo {
+  border-radius: 50px;
+  width: 150px;
+  overflow: hidden;
+}
+.user-list__photo img {
+  display: block;
+}
+
+.user-list__btn-delate {
+  background-color: red;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+.user-list__btn-delate:hover {
+  background-color: rgb(250, 90, 90);
+}/*# sourceMappingURL=UserListItem.module.css.map */

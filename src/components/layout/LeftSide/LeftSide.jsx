@@ -129,6 +129,9 @@ const LeftSide = () => {
         >
           Мед. працівники
         </Link>
+        <div className={styles["register-tel"]}>
+          <a href="tel:+380662312312">Реєстратор +380662312312</a>
+        </div>
       </div>
     </div>
   );

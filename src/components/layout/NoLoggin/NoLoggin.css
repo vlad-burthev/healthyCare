@@ -1,0 +1,28 @@
+.nologgin {
+  width: 500px;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: rgb(214, 255, 214);
+}
+.nologgin-block {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nologgin h1 {
+  margin-bottom: 50px;
+}
+.nologgin a {
+  padding: 10px 40px;
+  background-color: rgb(100, 152, 100);
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+.nologgin a:hover {
+  background-color: rgb(136, 197, 136);
+}/*# sourceMappingURL=NoLoggin.css.map */

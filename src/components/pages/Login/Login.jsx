@@ -3,6 +3,7 @@ import Container from "../../UI/Container/Container";
 import styles from "./Login.module.scss";
 import LoginPage from "../../layout/LoginPage/LoginPage";
 import RegForm from "../../layout/RegForm/RegForm";
+import img from "../../../img/logo_460x.avif";
 
 const Login = () => {
   const signList = [
@@ -22,6 +23,7 @@ const Login = () => {
 
   return (
     <div className={styles["signPage"]}>
+      <img src={img} alt="" className={styles["signPage-img"]} />
       <Container>
         <div className={styles["signPage-content"]}>
           <div

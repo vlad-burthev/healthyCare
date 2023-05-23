@@ -3,6 +3,7 @@ import styles from "./AddInfoMed.module.scss";
 import { MyInput } from "../../UI/MyInput/MyInput";
 import { MyTextArea } from "../../UI/MyInput/MyInput";
 import AddBtn from "../../UI/AddBtn/AddBtn";
+import ErrorForm from "../../UI/ErrorForm/ErrorForm";
 
 const AddInfoMed = ({ setUser, user, api, setShowForm }) => {
   const [userInfo, setUserInfo] = useState({
@@ -29,10 +30,11 @@ const AddInfoMed = ({ setUser, user, api, setShowForm }) => {
     if (
       userInfo.name.length === 0 ||
       userInfo.number.length === 0 ||
-      userInfo.manufacturer === 0 ||
-      userInfo.description === 0
+      userInfo.manufacturer.length === 0 ||
+      userInfo.description.length === 0 ||
+      userInfo.photo.length === 0
     ) {
-      setShowError(true);
+      return setShowError(true);
     } else {
       fetch(`http://localhost:3000/${api}`, {
         method: "POST",
@@ -104,7 +106,7 @@ const AddInfoMed = ({ setUser, user, api, setShowForm }) => {
               onChange={(e) =>
                 setUserInfo({ ...userInfo, description: e.target.value })
               }
-              placeholder="Введіть опис товару"
+              placeholder="Введіть опис товару *"
             />
           </div>
           <AddBtn className={styles["add-form__btn"]} onClick={addPatient}>

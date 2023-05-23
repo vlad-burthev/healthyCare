@@ -7,7 +7,7 @@ const ErrorForm = ({ setShowError }) => {
         <h3>
           Необхідно заповнити всі поля із "<span>*</span>"
         </h3>
-        <button onClick={() => setShowError(false)}>setShowError</button>
+        <button onClick={() => setShowError(false)}>Закрити</button>
       </div>
     </div>
   );

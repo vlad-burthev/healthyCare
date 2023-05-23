@@ -89,3 +89,20 @@
   .showLeftSide {
   }
 }
+
+.register-tel {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+  width: 270px;
+
+  border-radius: 12px;
+
+  & a {
+    font-weight: bold;
+    color: red;
+  }
+}

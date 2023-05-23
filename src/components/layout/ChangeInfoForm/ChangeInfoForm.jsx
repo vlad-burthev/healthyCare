@@ -19,6 +19,8 @@ const ChangeInfoForm = ({
 
   useEffect(() => {
     setNewUser({
+      login: patient.login,
+      pass: patient.pass,
       name: patient.name,
       age: patient.age,
       gender: patient.gender,
@@ -49,9 +51,9 @@ const ChangeInfoForm = ({
     });
 
     if (
-      newUser.name.length === 0 &&
-      newUser.age.length === 0 &&
-      newUser.phone.length === 0 &&
+      newUser.name.length === 0 ||
+      newUser.age.length === 0 ||
+      newUser.phone.length === 0 ||
       newUser.email.length === 0
     ) {
       setShowError(true);

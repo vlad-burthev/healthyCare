@@ -11,7 +11,7 @@ import AddInfoForm from "../../layout/AddInfoForm/AddInfoForm";
 
 const Personal = () => {
   const patient = useSelector((state) => state.repos.patient);
-  const doctorLogin = useSelector((state) => state.repos.doctor);
+  const registerLogin = useSelector((state) => state.repos.register);
 
   const [searchPersonal, setSearchPersonal] = useState("");
   const [personal, setPersonal] = useState([]);
@@ -33,7 +33,7 @@ const Personal = () => {
 
   const delateDoctor = async (id) => {
     axios
-      .delete(`http://localhost:3000/doctors/${id}`)
+      .delete(`http://localhost:3000/personal/${id}`)
       .then((response) => {
         console.log("Пользователь удален");
       })
@@ -54,12 +54,12 @@ const Personal = () => {
           placeholder="Введіть ім'я або ID лікаря або професію"
         />
 
-        {!patient && !doctorLogin && (
+        {registerLogin && (
           <button
             className={styles["doctors-add"]}
             onClick={() => setShowForm(true)}
           >
-            Додати лікаря
+            Додати мед. працівника
           </button>
         )}
 

@@ -8,6 +8,7 @@ import axios from "axios";
 const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
   const [doctors, setDoctors] = useState([]);
   const [patients, setPatients] = useState([]);
+  const [personal, setPersonal] = useState([]);
   const { data } = useApi("http://localhost:3000/doctors");
 
   useEffect(() => {
@@ -30,7 +31,23 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/personal");
+        const data = await response.json();
+        setPersonal(data);
+      } catch (error) {
+      } finally {
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const [userInfo, setUserInfo] = useState({
+    personalId: "",
+    personalName: "",
     patientDisease: "",
     patientId: "",
     doctorId: "",
@@ -88,6 +105,24 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
     fetchData();
   }, [userIdD]);
 
+  const [userIdP, setUserIdP] = useState();
+  const [personalInfo, setPersonalInfo] = useState({});
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/personal/${userIdP}`
+        );
+        const data = await response.json();
+        setPersonalInfo(data);
+      } catch (error) {
+      } finally {
+      }
+    };
+
+    fetchData();
+  }, [userIdD]);
+
   const dateFilter = records.some((obj) => {
     if (obj.recordDate === doctorInfo.date) {
       if (obj.recordTime === doctorInfo.time) {
@@ -99,6 +134,8 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
 
   const addPatient = () => {
     const newUser = {
+      personalId: userIdP,
+      personalName: personalInfo.name,
       patinetId: userId,
       patientName: patientInfo.name,
       doctorId: userIdD,
@@ -164,6 +201,17 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
               doctor
             );
           });
+
+        axios
+          .get(`http://localhost:3000/personal/${userIdP}`)
+          .then((response) => {
+            const personal = response.data;
+            personal.recordHistory.push(newRecord);
+            return axios.put(
+              `http://localhost:3000/personal/${userIdP}`,
+              personal
+            );
+          });
       }
     } else {
       alert("На цей час вже є запис");
@@ -224,7 +272,26 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
     setUserIdD(option.id);
   };
 
-  //
+  //personal
+  const [selectedValueP, setSelectedValueP] = useState("");
+  const [isOpenP, setIsOpenP] = useState(false);
+
+  const handleInputChangeP = (event) => {
+    setSelectedValueP(event.target.value);
+
+    setIsOpenP(Boolean(event.target.value));
+  };
+
+  const handleInputClickP = () => {
+    setIsOpenP(!isOpenP);
+  };
+
+  const handleItemClickP = (option) => {
+    setSelectedValueP(option.name);
+    setIsOpenP(false);
+    setUserInfo({ ...userInfo, personalName: option.name });
+    setUserIdP(option.id);
+  };
 
   return (
     <div className={styles["add-info__bg"]} onClick={() => setShowForm(false)}>
@@ -292,6 +359,37 @@ const AddRecords = ({ addUser, setShowForm, records, api, setRecords }) => {
                       <li
                         key={option.id}
                         onClick={() => handleItemClickD(option)}
+                      >
+                        {option.name} - {option.id}
+                      </li>
+                    ))}
+                </ul>
+              )}
+            </div>
+            <div className={styles["add-info__doctor-name"]}>
+              <MyInput
+                type="text"
+                id="my-input"
+                value={selectedValueP}
+                onChange={handleInputChangeP}
+                onClick={handleInputClickP}
+                placeholder="Введіть ім'я мед. працівника"
+              />
+              {isOpenP && (
+                <ul
+                  className={styles["add-info__doctor-list"]}
+                  style={{ zIndex: 1000 }}
+                >
+                  {personal
+                    .filter((option) =>
+                      option.name
+                        .toLowerCase()
+                        .includes(selectedValueP.toLowerCase())
+                    )
+                    .map((option) => (
+                      <li
+                        key={option.id}
+                        onClick={() => handleItemClickP(option)}
                       >
                         {option.name} - {option.id}
                       </li>

@@ -1,0 +1,43 @@
+.error-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-form {
+  height: 200px;
+  width: 500px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.231372549), -10px -10px 40px rgba(0, 0, 0, 0.231372549);
+}
+.error-form span {
+  color: red;
+  font-size: 30px;
+}
+.error-form button {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(141, 166, 141);
+  border: none;
+  color: #fff;
+  width: 80%;
+  transition: 0.3s;
+}
+.error-form button:hover {
+  background-color: rgb(119, 143, 119);
+}/*# sourceMappingURL=ErrorForm.module.css.map */

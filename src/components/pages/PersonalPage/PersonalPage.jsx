@@ -8,8 +8,8 @@ import CinItem from "../../layout/CinItem/CinItem";
 import ChangeInfoForm from "../../layout/ChangeInfoForm/ChangeInfoForm";
 
 const PersonalPage = () => {
-  const patientLogin = useSelector((state) => state.repos.patient);
   const registerLogin = useSelector((state) => state.repos.register);
+  const personalLogin = useSelector((state) => state.repos.personal);
 
   const { id } = useParams();
   const [patient, setPatient] = useState({});
@@ -43,10 +43,11 @@ const PersonalPage = () => {
   const [doctorRecords, setDoctorRecords] = useState([]);
   useEffect(() => {
     setDoctorRecords(
-      records.filter((record) => record.doctorId === patient.id)
+      records.filter((record) => record.personalId === patient.id)
     );
   }, [records]);
 
+  const value = localStorage.getItem("myKey");
   return (
     <div className={styles["patient-page"]}>
       <Container>
@@ -105,7 +106,7 @@ const PersonalPage = () => {
             </div>
           </div>
           <div className={styles["patient-page__medicine-information"]}>
-            <h3>Професія лікаря</h3>
+            <h3>Професія мед. працівника</h3>
             <div className={styles["medicine-information-history"]}>
               {patient.disease}
             </div>
@@ -113,12 +114,12 @@ const PersonalPage = () => {
             <div className={styles["medicine-information-history"]}>
               {patient.history}
             </div>
-            <h3>Інформація про лікаря</h3>
+            <h3>Інформація про мед. працівника</h3>
             <div className={styles["medicine-information-procedures"]}>
               {patient.procedures}
             </div>
           </div>
-          {!patientLogin && (
+          {(registerLogin || id === value) && (
             <button
               className={styles["open-change-form"]}
               onClick={() => setShowForm(true)}
@@ -127,7 +128,7 @@ const PersonalPage = () => {
             </button>
           )}
         </div>
-        {!registerLogin && (
+        {!personalLogin && (
           <div className={styles["doctor-records"]}>
             <h1>Записи пацієнтів за весь час</h1>
 
